@@ -3,7 +3,7 @@
 <p align="center">
   <strong>Give your AI agent the web-scraping ability it should have had all along.</strong><br>
   No more "Sorry, I can't access that page." Four-layer fallback strategy for public content.<br>
-  Just <code>.py</code> and <code>.md</code> you can actually read.
+  One Python file. Four fallback layers. Every public page, one command.
 </p>
 
 <p align="center">

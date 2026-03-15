@@ -3,7 +3,7 @@
 <p align="center">
   <strong>讓你的 AI Agent 擁有它早該有的網頁擷取能力。</strong><br>
   不再看到「抱歉，我無法擷取這個網頁」。四層備援策略，專抓公開內容。<br>
-  只有 <code>.py</code> 和 <code>.md</code>，你真的看得懂。
+  一支 Python 檔。四層備援。所有公開網頁，一道指令搞定。
 </p>
 
 <p align="center">
