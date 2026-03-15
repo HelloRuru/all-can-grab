@@ -1,9 +1,9 @@
 <h1 align="center">All Can Grab</h1>
 
 <p align="center">
-  <strong>Give your AI agent the web-scraping ability it should have had all along.</strong><br>
-  No more "Sorry, I can't access that page." Four-layer fallback strategy for public content.<br>
-  One Python file. Four fallback layers. Every public page, one command.
+  <strong>You paste a link. AI says "Sorry, I can't access that."</strong><br>
+  The page is public. The AI just doesn't have the right key.<br>
+  This script is that key ring.
 </p>
 
 <p align="center">
@@ -21,14 +21,19 @@
 
 ## The Problem
 
-- You ask your AI agent to read a public Facebook post -- it says *"Sorry, I can't access that page."*
-- Your workflow breaks every time. You open the browser yourself, copy-paste, and feed it back.
-- The content is public. The agent just doesn't know how to get past each platform's defenses.
-- Every platform has a different lock. One key doesn't fit all.
+You paste a Facebook link. AI says: *"Sorry, I can't access that page."*
+
+...but the post is public.
+
+So you open the browser yourself, copy, paste it back. Every. Single. Time.
+
+Honestly, just the copy-paste alone eats up half your day.
+
+It's not that AI won't help. It's that every platform has a different lock, and it doesn't have the right key.
 
 ## The Solution
 
-A single Python script with a **four-layer fallback strategy** that handles platform-specific defenses automatically.
+One Python script. Four fallback layers. It hands your AI the right key for every door.
 
 | Feature | Description |
 |---------|-------------|
@@ -149,12 +154,19 @@ all-can-grab/
 - **Custom parsers**: The `clinic_slots` field demonstrates how to add domain-specific parsing (dental appointment slots as an example)
 - **Environment variables**: Set `APIFY_TOKEN` for paid fallback on Instagram
 
-## :bulb: Design Philosophy
+## :bulb: Why It Works This Way
 
-- **Raw first** -- Don't open a browser if a simple HTTP request works. Saves resources and time.
-- **Strategy separation** -- Each platform has its own scraping config. Adding a new site is just one entry.
-- **Honest failure** -- Never fakes success. Reports what went wrong and suggests next steps.
-- **Public only** -- No login, no stored credentials, no bypassing any protection.
+**Don't open a browser if you don't have to.**
+HTTP gets the job done? Skip Playwright. Save time, save resources.
+
+**Every site gets its own key.**
+Facebook needs Googlebot UA. PTT needs an over18 cookie. Each strategy is one config entry. Adding a new site is one line.
+
+**If it fails, it says so.**
+No pretending. It tells you what went wrong and what to try next.
+
+**Public content only.**
+No login. No stored passwords. No paywall bypass. If you can see it, it grabs it. If you can't, neither can it.
 
 ### Output Schema
 
@@ -199,5 +211,5 @@ all-can-grab/
 ---
 
 <p align="center">
-  Give your agent the web it deserves.
+  Doors open. Go grab.
 </p>
