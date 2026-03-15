@@ -57,7 +57,7 @@ SITE_STRATEGIES = {
     "x_twitter":  {"ua": "normal",    "fallback": "playwright"},
     "medium":     {"ua": "normal",    "fallback": "curl_cffi"},
     "dcard":      {"ua": "normal",    "fallback": "playwright"},
-    "104":        {"ua": "normal",    "fallback": None},
+    "104":        {"ua": "normal",    "fallback": "playwright"},
     "default":    {"ua": "googlebot", "fallback": "playwright"},
 }
 
